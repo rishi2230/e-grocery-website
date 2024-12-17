@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - VOYAGE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>VOYAGE</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-actions">
+                <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#fresh">Fresh</a></li>
+                <li><a href="#pantry">Pantry</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="cart-container">
+            <div class="container">
+                <h1>Your Shopping Cart</h1>
+                <div class="cart-content">
+                    <div class="cart-items" id="cart-items">
+                        <!-- Cart items will be dynamically added here -->
+                    </div>
+                    <div class="cart-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-item">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">₹0.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Shipping:</span>
+                            <span id="shipping">₹0.00</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total:</span>
+                            <span id="total">₹0.00</span>
+                        </div>
+                        <a href="checkout.html" class="cta-button" id="checkout-btn">Proceed to Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" style="text-decoration: none;">
+                        <h2>VOYAGE</h2>
+                    </a>
+                    <p>Your one-stop shop for fresh groceries and daily essentials.</p>
+                    <br>
+                    <h2>Follow Us</h2>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Today's Deals</a></li>
+                        <li><a href="#">Fresh Vegetables</a></li>
+                        <li><a href="#">Juicy Fruits</a></li>
+                        <li><a href="#">Dairy Products</a></li>
+                        <li><a href="#">Spices & Seasonings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Customer Service</h2>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="support.html">Customer Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt" style="color: black; margin-right: 10px;"></i>
+                            123 Grocery St, Mumbai, 400001
+                        </li>
+                        <li>
+                            <i class="fas fa-phone" style="color: black; margin-right: 10px;"></i>
+                            +91 98765-43210
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope" style="color: black; margin-right: 10px;"></i>
+                            <a href="/cdn-cgi/l/email-protection#3b484e4b4b54494f7b4d54425a5c5e15585456"><span class="__cf_email__" data-cfemail="32414742425d404672445d4b5355571c515d5f">[email&#160;protected]</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png" alt="Rupay Logo" class="payment-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/UPI-Logo-vector.svg" alt="UPI Logo" class="payment-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png" alt="Paytm Logo" class="payment-logo">
+                </div>
+                <p>&copy; 2024 VOYAGE. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="about.html">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="cart-count.js"></script>
+</body>
+</html>
+

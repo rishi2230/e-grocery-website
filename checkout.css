@@ -1,0 +1,84 @@
+.checkout-container {
+    padding: 40px 0;
+}
+
+.checkout-content {
+    display: flex;
+    gap: 40px;
+}
+
+.order-summary, .payment-form {
+    flex: 1;
+}
+
+.order-summary {
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+.delivery-fee {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+    font-weight: 500;
+}
+
+.payment-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .checkout-content {
+        flex-direction: column;
+    }
+}
+
+.payment-form {
+    text-align: center;
+}
+
+.payment-form p {
+    margin-bottom: 20px;
+}
+
+#razorpay-redirect {
+    width: 100%;
+    max-width: 300px;
+}
+

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - VOYAGE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>VOYAGE</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-actions">
+                <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#fresh">Fresh</a></li>
+                <li><a href="#pantry">Pantry</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="product-detail">
+            <div class="container">
+                <div class="product-info" data-product-id="fresh-apples">
+                    <div class="product-image">
+                        <img src="/images/fresh-apples.jpg" alt="Fresh Apples" id="product-image">
+                    </div>
+                    <h1 id="product-name">Fresh Apples</h1>
+                    <p class="price" id="product-price">₹199.00/kg</p>
+                    <div class="rating">
+                        <span class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-count">(250 reviews)</span>
+                    </div>
+                    <p class="description" id="product-description">
+                        Fresh, juicy, and crisp apples sourced directly from organic farms. Perfect for snacking, baking, or juicing.
+                    </p>
+                    <div class="quantity">
+                        <label for="quantity">Quantity (kg):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <button class="cta-button" id="add-to-cart">Add to Cart</button>
+                    <button class="wishlist-button" id="add-to-wishlist">
+                        <i class="far fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="product-info" data-product-id="fresh-milk">
+                    <div class="product-image">
+                        <img src="/images/fresh-milk.jpg" alt="Fresh Milk" id="product-image">
+                    </div>
+                    <h1 id="product-name">Fresh Milk</h1>
+                    <p class="price" id="product-price">₹49.00/litre</p>
+                    <div class="rating">
+                        <span class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-count">(180 reviews)</span>
+                    </div>
+                    <p class="description" id="product-description">
+                        Fresh and pure milk sourced directly from trusted dairy farms. Packed with nutrition for your family.
+                    </p>
+                    <div class="quantity">
+                        <label for="quantity">Quantity (litre):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <button class="cta-button" id="add-to-cart">Add to Cart</button>
+                    <button class="wishlist-button" id="add-to-wishlist">
+                        <i class="far fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="product-info" data-product-id="whole-grain-bread">
+                    <div class="product-image">
+                        <img src="/images/whole-grain-bread.jpg" alt="Whole Grain Bread" id="product-image">
+                    </div>
+                    <h1 id="product-name">Whole Grain Bread</h1>
+                    <p class="price" id="product-price">₹39.00/loaf</p>
+                    <div class="rating">
+                        <span class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="review-count">(150 reviews)</span>
+                    </div>
+                    <p class="description" id="product-description">
+                        Healthy and delicious whole grain bread, perfect for sandwiches and toasts. Made with natural ingredients.
+                    </p>
+                    <div class="quantity">
+                        <label for="quantity">Quantity (loaf):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <button class="cta-button" id="add-to-cart">Add to Cart</button>
+                    <button class="wishlist-button" id="add-to-wishlist">
+                        <i class="far fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="product-info" data-product-id="fresh-eggs">
+                    <div class="product-image">
+                        <img src="/images/fresh-eggs.jpg" alt="Fresh Eggs" id="product-image">
+                    </div>
+                    <h1 id="product-name">Fresh Eggs (12 Pack)</h1>
+                    <p class="price" id="product-price">₹65.00</p>
+                    <div class="rating">
+                        <span class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-count">(200 reviews)</span>
+                    </div>
+                    <p class="description" id="product-description">
+                        Nutritious and farm-fresh eggs, perfect for breakfast, baking, and meals. Rich in protein and essential nutrients.
+                    </p>
+                    <div class="quantity">
+                        <label for="quantity">Quantity (pack):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <button class="cta-button" id="add-to-cart">Add to Cart</button>
+                    <button class="wishlist-button" id="add-to-wishlist">
+                        <i class="far fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="product-info" data-product-id="maggi">
+                    <div class="product-image">
+                        <img src="/images/maggi.jpg" alt="Maggi" id="product-image">
+                    </div>
+                    <h1 id="product-name">Maggi (Pack of 5)</h1>
+                    <p class="price" id="product-price">₹99.00</p>
+                    <div class="rating">
+                        <span class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="review-count">(300 reviews)</span>
+                    </div>
+                    <p class="description" id="product-description">
+                        Enjoy your favorite instant noodles, quick to prepare and delicious. Perfect for snacks or meals.
+                    </p>
+                    <div class="quantity">
+                        <label for="quantity">Quantity (pack):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <button class="cta-button" id="add-to-cart">Add to Cart</button>
+                    <button class="wishlist-button" id="add-to-wishlist">
+                        <i class="far fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" style="text-decoration: none;">
+                        <h2>VOYAGE</h2>
+                    </a>
+                    <p>Your one-stop shop for fresh groceries and daily essentials.</p>
+                    <br>
+                    <h2>Follow Us</h2>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Today's Deals</a></li>
+                        <li><a href="#">Fresh Vegetables</a></li>
+                        <li><a href="#">Juicy Fruits</a></li>
+                        <li><a href="#">Dairy Products</a></li>
+                        <li><a href="#">Spices & Seasonings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Customer Service</h2>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="support.html">Customer Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Grocery St, Mumbai, 400001</li>
+                        <li><i class="fas fa-phone"></i> +91 98765-43210</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:support@voyage.com">support@voyage.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png" alt="Rupay Logo" class="payment-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/UPI-Logo-vector.svg" alt="UPI Logo" class="payment-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png" alt="Paytm Logo" class="payment-logo">
+                </div>
+                <p>&copy; 2024 VOYAGE. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="about.html">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="cart-count.js"></script>
+    <script src="product-detail.js"></script>
+</body>
+</html>

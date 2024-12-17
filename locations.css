@@ -1,0 +1,125 @@
+.locations-hero {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.locations-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.locations-content {
+    padding: 40px 0;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px 0 0 4px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #6b3609;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.location-item {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.location-item h3 {
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.location-item p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.location-item strong {
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+
+.location-item p span {
+    display: inline;
+}
+
+
+.location-item .directions {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.location-item .directions:hover {
+    background-color: #6b3609;
+}
+
+@media (max-width: 768px) {
+    .locations-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-box input {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .search-box button {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 4px;
+    }
+
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+}
